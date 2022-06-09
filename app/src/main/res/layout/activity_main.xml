@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Sensor Accelerometer"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/xText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="x"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="y"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/yText"
+        android:layout_below="@id/xText"
+        android:layout_alignStart="@id/xText"
+        android:layout_marginTop="60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="z"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/zText"
+        android:layout_below="@id/yText"
+        android:layout_alignStart="@id/yText"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/bt_stop"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zText"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/purple_500"
+        android:letterSpacing="0.3"
+        android:text="Stop"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="false"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zText"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/purple_500"
+        android:letterSpacing="0.3"
+        android:text="Start"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="false"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#009688"
+        android:text="Lihat Database"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
